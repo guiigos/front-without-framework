@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks</title>
+
+  <style>
+    form {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .actions {
+      gap: 10px;
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+  <form name="task">
+    <input
+      type="text"
+      name="name"
+      placeholder="Enter the task name" />
+
+    <input
+      type="text"
+      name="description"
+      placeholder="Enter the description" />
+
+    <button type="submit">Save</button>
+  </form>
+
+  <hr>
+
+  <div id="content"></div>
+
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
